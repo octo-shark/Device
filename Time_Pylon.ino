@@ -28,6 +28,10 @@ int16_t gx, gy, gz;
  Receives from the hardware serial, sends to software serial.
  Receives from software serial, sends to hardware serial.
 
+ https://www.teachmemicro.com/arduino-bluetooth/
+ https://maker.pro/arduino/tutorial/how-to-interface-arduino-and-the-mpu-6050-sensor
+ https://hackernoon.com/create-your-first-arduino-node-js-iot-visualization-app-in-under-15-minutes-619f8e6f7181
+
  The circuit:
  * RX is digital pin 9 (connect to TX of other device)
  * TX is digital pin 10 (connect to RX of other device)
