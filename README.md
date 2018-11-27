@@ -8,3 +8,9 @@ This code reads the MPU6050 and sends the x,y,z vector and which side is facing 
 bluetooth modem and the serial port.
 
 Bluetooth modem is hooked up to rx=pin 9, tx= pin 10
+
+to start server:
+npm run go
+
+To view:
+http://localhost:8080/echotest.html
