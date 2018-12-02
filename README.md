@@ -1,4 +1,4 @@
-# Device
+# Device - Time Pylon
 
 Uses Arduino Uno,
 MPU6050 accelerometer &
