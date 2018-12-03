@@ -24,12 +24,12 @@ http://localhost:8080/echotest.html
 
 Wiring:
 
-Arduino pin 9  -> HC-05 TXD
-Arudino pin 10 -> HC-05 RXD
-Arduino pin A4 -> MPU6050 SDA
-Arduino pin A5 -> MPU6050 SCL
-Arduino 3.3v   -> MPU6050 VCC
-Arduino 5v     -> HC-05 Vcc
-Ardunio gnd    -> MPU6050 GND
-Arduino gnd    -> HC-05 GND
-Arduino pin 2  -> MPU6050 INT
+Arduino pin 9  -> HC-05 TXD<br>
+Arudino pin 10 -> HC-05 RXD<br>
+Arduino pin A4 -> MPU6050 SDA<br>
+Arduino pin A5 -> MPU6050 SCL<br>
+Arduino 3.3v   -> MPU6050 VCC<br>
+Arduino 5v     -> HC-05 Vcc<br>
+Ardunio gnd    -> MPU6050 GND<br>
+Arduino gnd    -> HC-05 GND<br>
+Arduino pin 2  -> MPU6050 INT<br>
