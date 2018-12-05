@@ -1,11 +1,8 @@
 /*
-Simple Serial input / output
+Time Pylon Bluetooth serial input / output
 To call this type the following on the command line:
 node index.js portName
 where portname is the name of your serial port, e.g. /dev/tty.usbserial-xxxx (on OSX)
-created 19 Sept 2014
-modified 5 Nov 2017
-by Tom Igoe
 */
 
 var SerialPort = require("serialport"); // include the serialport library
