@@ -11,13 +11,21 @@ Bluetooth modem runs at 9600 baud
 Built-in serial port is at 57600 baud
 
 Built-in arduino serial port outputs in following format:
+
+```
 {"side":[0..7], "ax":[-2..2], "ay":[-2..2], "az":[-2..2]}
 example: {"side":0, "ax":.03, "ay":1.24, "az":-1.02}
+```
 
 Bluetooth serial output:
 Bluetooth modem sends side in JSON format when a new side is set.
+
+```
 {"side":[0..7]}
 example: {"side":0}
+```
+
+To start time pylon:
 
 First, Link Time Pylon with Mac over Bluetooth
 
