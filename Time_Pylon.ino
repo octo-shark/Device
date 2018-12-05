@@ -121,26 +121,32 @@ void loop() {
 #endif
 
     newSide = -1; // Default to uninitalized
-    if( ax_f > 0.00 && ax_f < 0.13 && ay_f > -0.05 && ay_f < 0.25 && az_f > 0.70 && az_f < 0.90 ) {
+    if( ax_f > -0.15 && ax_f < 0.13 && ay_f > -0.08 && ay_f < 0.25 && az_f > 0.70 && az_f < 1.00 ) {
       newSide = 1;
     }
-    if( ax_f > -0.90 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.07 && az_f > 0.20 && az_f < 0.36 ) {
+    if( ax_f > -0.80 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.07 && az_f > 0.20 && az_f < 0.45 ) {
       newSide = 2;
     }
     if( ax_f > -0.90 && ax_f < -0.70 && ay_f > -0.15 && ay_f < 0.10 && az_f > -0.80 && az_f < -0.65 ) {
       newSide = 3;
     }
-    if( ax_f > 0.02 && ax_f < 0.14 && ay_f > -0.25 && ay_f < 0.10 && az_f > -1.25 && az_f < -1.10 ) {
+    if( ax_f > 0.02 && ax_f < 0.25 && ay_f > -0.25 && ay_f < 0.10 && az_f > -1.25 && az_f < -1.00 ) {
       newSide = 4;
     }
-    if( ax_f > 0.85 && ax_f < 1.00 && ay_f > -0.13 && ay_f < 0.00 && az_f > -0.80 && az_f < -0.60 ) {
+    if( ax_f > 0.85 && ax_f < 1.05 && ay_f > -0.13 && ay_f < 0.05 && az_f > -0.80 && az_f < -0.30 ) {
       newSide = 5;
     }
-    if( ax_f > 0.80 && ax_f < 0.99 && ay_f > -0.07 && ay_f < 0.18 && az_f > 0.24 && az_f < 0.38 ) {
+    if( ax_f > 0.70 && ax_f < 0.99 && ay_f > -0.07 && ay_f < 0.18 && az_f > 0.24 && az_f < 0.70 ) {
       newSide = 6;
     }
     if( ax_f > -0.05 && ax_f < 0.18 && ay_f > -1.08 && ay_f < -.90 && az_f > -0.25 && az_f < 0.05 ) {
       newSide = 7;
+    }
+    if( ax_f > -0.05 && ax_f < 0.18 && ay_f > -1.08 && ay_f < -.90 && az_f > -0.25 && az_f < 0.05 ) {
+      newSide = 7;
+    }
+    if( ax_f > -0.05 && ax_f < 0.18 && ay_f > .85 && ay_f < 1.10 && az_f > -0.35 && az_f < 0.05 ) {
+      newSide = 0;
     }
 
     if (newSide != -1 && newSide != side) {
