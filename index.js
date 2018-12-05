@@ -83,6 +83,9 @@ function handleConnection(client) {
   connections.push(client); // add this client to the connections array
 
   client.on("message", sendToSerial); // when a client sends a message,
+  client.on("error", function(err) {
+    console.log(err);
+  });
 
   client.on("close", function() {
     // when a client closes its connection
