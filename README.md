@@ -37,7 +37,7 @@ First, Link Time Pylon with Mac over Bluetooth
 6. Enter 1234 for access code & click connect
 7. Bluetooth is now ready
 
-to start Device server:
+to start Time Pylon Device server:
 npm run go
 
 To view sample web app:
