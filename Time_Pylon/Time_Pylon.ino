@@ -99,36 +99,15 @@ void loop() {
     ay_f = ay/16383.0;
     az_f = az/16383.0;
     
-    Serial.print("{\"side\":");
-    Serial.print(side);
-    Serial.print(", \"ax\":");
-    Serial.print(ax_f);
-    Serial.print(", \"ay\":");
-    Serial.print(ay_f);
-    Serial.print(", \"az\":");
-    Serial.print(az_f);
-    Serial.println("}");
-
-#if DEBUG
-    blueSerial.print("{\"side\":");
-    blueSerial.print(side);
-    blueSerial.print(", \"ax\":");
-    blueSerial.print(ax_f);
-    blueSerial.print(", \"ay\":");
-    blueSerial.print(ay_f);
-    blueSerial.print(", \"az\":");
-    blueSerial.print(az_f);
-    blueSerial.println("}");
-#endif
 
     newSide = -1; // Default to uninitalized
     if( ax_f > -0.15 && ax_f < 0.13 && ay_f > -0.08 && ay_f < 0.25 && az_f > 0.70 && az_f < 1.00 ) {
       newSide = 1;
     }
-    if( ax_f > -0.80 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.07 && az_f > 0.20 && az_f < 0.45 ) {
+    if( ax_f > -0.95 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.07 && az_f > 0.20 && az_f < 0.45 ) {
       newSide = 2;
     }
-    if( ax_f > -0.90 && ax_f < -0.70 && ay_f > -0.15 && ay_f < 0.10 && az_f > -0.80 && az_f < -0.65 ) {
+    if( ax_f > -0.90 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.10 && az_f > -0.80 && az_f < -0.65 ) {
       newSide = 3;
     }
     if( ax_f > 0.02 && ax_f < 0.25 && ay_f > -0.25 && ay_f < 0.10 && az_f > -1.25 && az_f < -1.00 ) {
@@ -168,6 +147,28 @@ void loop() {
       newSideCount = 0;
       outputSide();
     }
+
+    Serial.print("{\"side\":");
+    Serial.print(side);
+    Serial.print(", \"ax\":");
+    Serial.print(ax_f);
+    Serial.print(", \"ay\":");
+    Serial.print(ay_f);
+    Serial.print(", \"az\":");
+    Serial.print(az_f);
+    Serial.println("}");
+
+#if DEBUG
+    blueSerial.print("{\"side\":");
+    blueSerial.print(side);
+    blueSerial.print(", \"ax\":");
+    blueSerial.print(ax_f);
+    blueSerial.print(", \"ay\":");
+    blueSerial.print(ay_f);
+    blueSerial.print(", \"az\":");
+    blueSerial.print(az_f);
+    blueSerial.println("}");
+#endif
     
     
   }
