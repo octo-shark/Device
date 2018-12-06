@@ -47,7 +47,7 @@ To view sample web app:<br>
 http://localhost:8080/echotest.html
 
 Wiring:
-Arduino pin 9 RX-> HC-05 TXD<br>
+Arduino pin 9 RX -> HC-05 TXD<br>
 Arudino pin 10 TX -> HC-05 RXD<br>
 Arduino pin A4 -> MPU6050 SDA<br>
 Arduino pin A5 -> MPU6050 SCL<br>
