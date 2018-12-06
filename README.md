@@ -1,4 +1,4 @@
-# Device - Time Pylon
+# Device - Time Shark - Time Pylon
 
 Uses Arduino Uno,
 MPU6050 accelerometer &
@@ -14,7 +14,7 @@ Built-in arduino serial port outputs in following format:
 
 ```
 {"side":[0..7], "ax":[-2..2], "ay":[-2..2], "az":[-2..2]}
-example: 
+example:
 {"side":0, "ax":.03, "ay":1.24, "az":-1.02}
 ```
 
@@ -24,7 +24,7 @@ Bluetooth modem sends side in JSON format when a new side is set.
 ```
 {"side":[0..7]}
 
-example: 
+example:
 {"side":0}
 ```
 
