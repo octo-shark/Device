@@ -43,6 +43,8 @@ First, Link Time Pylon with Mac over Bluetooth
 
 to start Time Pylon Device server:<br>
 npm run go
+note: be sure to ^c the node server when disconnecting the pylon, the CPU
+will run very fast otherwise.
 
 To view sample web app:<br>
 http://localhost:8080/echotest.html
