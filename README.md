@@ -14,6 +14,7 @@ Built-in arduino serial port outputs in following format:
 
 ```
 {"side":[0..7], "ax":[-2..2], "ay":[-2..2], "az":[-2..2]}
+
 example:
 {"side":0, "ax":.03, "ay":1.24, "az":-1.02}
 ```
