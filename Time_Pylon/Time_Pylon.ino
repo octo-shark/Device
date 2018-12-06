@@ -85,7 +85,7 @@ void loop() {
   }
 
   c++;
-  if(c>15000) {
+  if(c>10000) {
     /// blueSerial.println(random(0,100));
 
     oldax_f = ax_f; 
@@ -107,7 +107,7 @@ void loop() {
     if( ax_f > -0.95 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.07 && az_f > 0.20 && az_f < 0.45 ) {
       newSide = 2;
     }
-    if( ax_f > -0.90 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.10 && az_f > -0.80 && az_f < -0.65 ) {
+    if( ax_f > -0.90 && ax_f < -0.70 && ay_f > -0.20 && ay_f < 0.10 && az_f > -0.80 && az_f < -0.45 ) {
       newSide = 3;
     }
     if( ax_f > 0.02 && ax_f < 0.25 && ay_f > -0.25 && ay_f < 0.10 && az_f > -1.25 && az_f < -1.00 ) {
