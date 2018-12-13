@@ -10,7 +10,7 @@ This code reads the MPU6050 and sends the x,y,z vector and which side is facing 
 bluetooth modem and the serial port.
 
 Bluetooth modem runs at 9600 baud<br>
-Built-in serial port is at 57600 baud
+Built-in serial port is at 57600 baud.
 
 Built-in arduino serial port outputs in following format:
 
